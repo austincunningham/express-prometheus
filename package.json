@@ -1,0 +1,28 @@
+{
+  "name": "express-prometheus",
+  "version": "1.0.0",
+  "description": "express app with prometheus metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/austincunningham/express-prometheus.git"
+  },
+  "keywords": [
+    "express",
+    "prometheus",
+    "metrics",
+    "node",
+    "monitoring"
+  ],
+  "author": "Austin Cunningham",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "express-prom-bundle": "^6.3.6",
+    "prom-client": "^13.1.0"
+  }
+}
