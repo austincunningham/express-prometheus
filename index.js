@@ -7,8 +7,8 @@ const metricsMiddleware = promBundle({
     includePath: true, 
     includeStatusCode: true, 
     includeUp: true,
-    customLabels: {project_name: 'hello_world', project_type: 'test_metrics_labels', time: null},
-    transformLabels: labels => Object.assign(labels, {time: new Date().getTime()}),
+    customLabels: {project_name: 'hello_world', project_type: 'test_metrics_labels'},//, time: null},
+    //transformLabels: labels => Object.assign(labels, {time: new Date().getTime()}),
     promClient: {
         collectDefaultMetrics: {
         }
