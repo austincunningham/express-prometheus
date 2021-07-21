@@ -194,3 +194,10 @@ http_request_duration_seconds_count{status_code="304",method="GET",path="/hello"
 up 1
 ```
 
+## Container Image
+
+```bash
+docker pull quay.io/austincunningham/express-prometheus
+docker run -p 8080:8080 quay.io/austincunningham/express-prometheus:v1.0.0
+
+```
