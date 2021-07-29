@@ -215,3 +215,4 @@ You can used the script
 ./deploy.sh
 # You can use cleanup.sh to remove the uploaded files
 ./cleanup.sh
+```
