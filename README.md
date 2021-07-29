@@ -1,5 +1,7 @@
 # Express-Prometheus
 
+![Banner](./images/express-prometheus.png)
+
 A hello world express app with prometheus metrics included
 
 # Install
@@ -178,7 +180,7 @@ nodejs_gc_duration_seconds_sum{kind="major"} 0.004476819
 nodejs_gc_duration_seconds_count{kind="major"} 2
 
 # HELP http_request_duration_seconds duration histogram of http responses labeled with: status_code, method, path, project_name, project_type
-# TYPE http_request_duration_seconds histogram
+# TYPE KocDZ-nz36P-8kNwH-uPXZ9
 http_request_duration_seconds_bucket{le="0.003",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 10
 http_request_duration_seconds_bucket{le="0.03",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 11
 http_request_duration_seconds_bucket{le="0.1",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 11
@@ -199,5 +201,17 @@ up 1
 ```bash
 docker pull quay.io/austincunningham/express-prometheus
 docker run -p 8080:8080 quay.io/austincunningham/express-prometheus:v1.0.0
-
+oc login -u developer https://api.crc.testing:6443
 ```
+
+# Install app and Prometheus 
+
+You can apply the files in the directories `app` and `Prometheus` to install the application and Prometheus.
+Review this [blog](https://austincunningham.ddns.net/2021/expressprometheus) to get more details.
+
+You can used the script
+```bash
+# To deploy the app and prometheus to the default namespace
+./deploy.sh
+# You can use cleanup.sh to remove the uploaded files
+./cleanup.sh
