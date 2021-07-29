@@ -209,7 +209,7 @@ oc login -u developer https://api.crc.testing:6443
 You can apply the files in the directories `app` and `Prometheus` to install the application and Prometheus.
 Review this [blog](https://austincunningham.ddns.net/2021/expressprometheus) to get more details.
 
-You can used the script
+You can used the scripts to add and remove all files
 ```bash
 # To deploy the app and prometheus to the default namespace
 ./deploy.sh
