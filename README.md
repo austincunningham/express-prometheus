@@ -4,12 +4,12 @@
 
 A hello world express app with prometheus metrics included
 
-# Install
+## Install
 
 ```bash
 npm i
 ```
-# Running
+## Running
 ```bash
 npm start
 > express-prometheus@1.0.0 start /home/austincunningham/repo/express-prometheus
@@ -204,7 +204,7 @@ docker run -p 8080:8080 quay.io/austincunningham/express-prometheus:v1.0.0
 oc login -u developer https://api.crc.testing:6443
 ```
 
-# Install app and Prometheus 
+## Install app and Prometheus 
 
 You can apply the files in the directories `app` and `Prometheus` to install the application and Prometheus.
 Review this [blog](https://austincunningham.ddns.net/2021/expressprometheus) to get more details.
