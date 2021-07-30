@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const promBundle = require("express-prom-bundle");
+const { Histogram } = require('prom-client');
 
 // Add the options to the prometheus middleware most option are for http_request_duration_seconds histogram metric
 const metricsMiddleware = promBundle({
@@ -9,6 +10,7 @@ const metricsMiddleware = promBundle({
     includeStatusCode: true, 
     includeUp: true,
     customLabels: {project_name: 'hello_world', project_type: 'test_metrics_labels'},
+    metricsType: Histogram,
     promClient: {
         collectDefaultMetrics: {
         }
