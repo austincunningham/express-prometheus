@@ -180,7 +180,7 @@ nodejs_gc_duration_seconds_sum{kind="major"} 0.004476819
 nodejs_gc_duration_seconds_count{kind="major"} 2
 
 # HELP http_request_duration_seconds duration histogram of http responses labeled with: status_code, method, path, project_name, project_type
-# TYPE KocDZ-nz36P-8kNwH-uPXZ9
+# TYPE http_request_duration_seconds histogram
 http_request_duration_seconds_bucket{le="0.003",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 10
 http_request_duration_seconds_bucket{le="0.03",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 11
 http_request_duration_seconds_bucket{le="0.1",status_code="304",method="GET",path="/hello",project_name="hello_world",project_type="test_metrics_labels"} 11
