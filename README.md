@@ -201,7 +201,7 @@ up 1
 ```bash
 docker pull quay.io/austincunningham/express-prometheus
 docker run -p 8080:8080 quay.io/austincunningham/express-prometheus:v1.0.0
-oc login -u developer https://api.crc.testing:6443
+Listening at http://localhost:8080
 ```
 
 ## Install app and Prometheus 
