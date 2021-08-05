@@ -1,6 +1,7 @@
+ENDPOINT=http://example-app-default.apps-crc.testing/
 while true; 
 do
-	curl http://example-app-default.apps-crc.testing/
-	curl http://example-app-default.apps-crc.testing/hello
-	curl -X POST -H "Content-Type: application/json" -d '{"name": "linuxize", "email": "linuxize@example.com"}' http://example-app-default.apps-crc.testing/bye
+	curl $ENDPOINT
+	curl ${ENDPOINT}hello
+	curl -X POST -H "Content-Type: application/json" -d '{"name": "linuxize", "email": "linuxize@example.com"}' ${ENDPOINT}bye
 done

@@ -213,6 +213,9 @@ You can used the scripts to add and remove all files to the default namespace on
 ```bash
 # To deploy the app and prometheus to the default namespace
 ./deploy.sh
+# You can use the rate.sh script to hit the endpoints
+# If you deployed somewhere other that crc you can update the $ENDPOINT with the current route
+./rate.sh
 # You can use cleanup.sh to remove the uploaded files
 ./cleanup.sh
 ```
