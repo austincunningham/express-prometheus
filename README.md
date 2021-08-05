@@ -2,7 +2,9 @@
 
 ![Banner](./images/express-prometheus.png)
 
-A hello world express app with prometheus metrics included
+A hello world express app with prometheus metrics included. This repo is used in the following blogs
+- [Get Prometheus Metrics from a Express.js app](https://austincunningham.ddns.net/2021/expressprometheus)
+- [Use Grafana to plot Express.js apps Metrics](https://austincunningham.ddns.net/2021/expressgrafana)
 
 ## Install
 
@@ -219,3 +221,12 @@ You can used the scripts to add and remove all files to the default namespace on
 # You can use cleanup.sh to remove the uploaded files
 ./cleanup.sh
 ```
+## Grafana
+See the following [blog](https://austincunningham.ddns.net/2021/expressgrafana) for information on setting up Grafana.
+If you have the Grafana operator installed in the grafana namespace you can setup the dashboard by applying the Grafana dashboard CR
+
+```bash
+oc apply -f Grafana/grafana-dashboard-cr.yaml
+```
+
+![dashboard screenshot](images/dashboard.png)
