@@ -6,7 +6,7 @@ oc apply -f app/service.yaml
 oc expose service example-app
 # deploy prometheus
 # bundle from prometheus operator
-oc apply -f https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/master/bundle.yaml
+oc create -f https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/master/bundle.yaml
 oc apply -f Prometheus/prometheus.yaml
 oc apply -f Prometheus/prometheus-service.yaml
 oc expose service prometheus
